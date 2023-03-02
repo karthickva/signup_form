@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SIGNUP FORM</title>
+	<link rel="stylesheet"
+		href="style.css">
+     <script>
+        function verifyPassword() {
+            var pwd1=document.getElementById("pass1").value
+            var pwd2=document.getElementById("pass2").value
+            if(pwd1.length < 8) {  
+    alert("ENTER 8 CHARACTERS OF LENGTH");
+     return false;  
+  }  
+  if(pwd1.length !=pwd2.length) {  
+    alert("PASSWORD MUST BE SAME");
+     return false;  
+  }  
+  
+
+        }
+     </script>   
+
+</head>
+<body>
+	<header>
+		<h1 class="heading">SIGNUP FORM</h1>
+		<h3 class="title">Signup & Registration Form</h3>
+	</header>
+
+    
+    <form>
+		<label for="fname">Your Name:</label><br>
+
+				<input type="text"
+					class="name ele"
+					placeholder="Enter your name">
+					<br><label for="fname">E-mail:</label><br>
+					
+				<input type="email"
+					class="email ele"
+					placeholder="youremail@email.com">
+					<br><label for="fname">password:</label><br>
+				<input type="password"
+				id="pass1"
+					placeholder="password">
+					<br><label for="fname">Confirm Password:</label><br>
+                <input type="password"
+					id="pass2"
+					placeholder="Confirm password">
+                    <br><br><button onclick=verifyPassword()  class="clkbtn">Signup</button>
+				
+				</form>
+			
+		
+	
+</body>
+
+</html>
